@@ -1,4 +1,8 @@
 {
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "tauri-app",
+  "version": "0.0.0",
+  "identifier": "co.com.ies.pruebas.tauri-app",
   "build": {
     "beforeDevCommand": "",
     "beforeBuildCommand": "",
@@ -6,6 +10,7 @@
     "distDir": "../src",
     "withGlobalTauri": true
   },
+
   "package": {
     "productName": "tauri-app",
     "version": "0.0.0"
@@ -14,7 +19,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "example.tauri.icb",
+      "identifier": "co.com.ies.pruebas.tauri-app",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -24,7 +29,7 @@
       ],
       "updater": {
         "active": true,
-        "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEY3QjQxNzIxMEE4MzMzRkUKUldUK000TUtJUmUwOXhZSStkdmlSU0trRXQxSFIxcHpJRlpoeDRMb2VWNHBudTVpbFJpeXVidVYK",
+        "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDEwMEE2M0ZDNENERTJEQ0IKUldUTExkNU0vR01LRUt3aXM2eXoxZGw5TkJ4elpaUkIyQmhZZzVFVWV5YXVCT2VOMm5yRDN6REkK",
         "windows": {
           "installMode": "passive"
         }
@@ -54,3 +59,4 @@
     }
   }
 }
+
