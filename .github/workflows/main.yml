@@ -1,6 +1,7 @@
 name: 'publish with cargo'
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - test-updater
