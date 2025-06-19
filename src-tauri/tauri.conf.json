@@ -6,35 +6,24 @@
   "build": {
     "beforeDevCommand": "",
     "beforeBuildCommand": "",
-    "devPath": "../src",
-    "distDir": "../src",
-    "withGlobalTauri": true
+
+    "frontendDist": "../src"
   },
 
-  "package": {
-    "productName": "tauri-app",
-    "version": "0.0.0"
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+
   },
-  "tauri": {
-    "bundle": {
-      "active": true,
-      "targets": "all",
-      "identifier": "co.com.ies.pruebas.tauri-app",
-      "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
-      ],
-      "updater": {
-        "active": true,
-        "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDEwMEE2M0ZDNENERTJEQ0IKUldUTExkNU0vR01LRUt3aXM2eXoxZGw5TkJ4elpaUkIyQmhZZzVFVWV5YXVCT2VOMm5yRDN6REkK",
-        "windows": {
-          "installMode": "passive"
-        }
-      }
-    },
+  "app": {
+
     "security": {
       "csp": null
     },
@@ -48,6 +37,7 @@
       }
     ]
   },
+
   "plugins": {
     "shell": {
       "open": true
@@ -55,8 +45,12 @@
     "updater": {
       "endpoints": [
         "https://github.com/i-c-b/example-tauri-v2-updater-action/releases/latest/download/latest.json"
-      ]
+      ],      
+      "active": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDEwMEE2M0ZDNENERTJEQ0IKUldUTExkNU0vR01LRUt3aXM2eXoxZGw5TkJ4elpaUkIyQmhZZzVFVWV5YXVCT2VOMm5yRDN6REkK",
+      "windows": {
+        "installMode": "passive"
+      }
     }
   }
 }
-
